@@ -16,11 +16,14 @@ PAGE_TITLE = "Digital CV | Andrzej Padło"
 PAGE_ICON = ":wave:"
 NAME = "Andrzej Padło"
 DESCRIPTION = """
-Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+Test Development Engineer and Senior Protocol Test Engineer with extensive experience in backend/API and mobile 
+network protocol testing, automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
+modern test frameworks. Experienced in healthcare and telecom domains, with a strong record of collaboration and 
+continuous learning.
 """
-EMAIL = "johndoe@email.com"
+# EMAIL = "johndoe@email.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/codingisfun",
+    "YouTube": "https://youtube.com/",
     "LinkedIn": "https://linkedin.com",
     "GitHub": "https://github.com",
     "Twitter": "https://twitter.com",
@@ -58,7 +61,13 @@ with col2:
         file_name=resume_file.name,
         mime="application/octet-stream",
     )
-    st.write("📫", EMAIL)
+    # Replace email with a contact button
+    contact_button = st.button("📧 Contact Me")
+    if contact_button:
+        st.markdown(
+            '<meta http-equiv="refresh" content="0; url=mailto:apadlo@hotmail.com">',
+            unsafe_allow_html=True
+        )
 
 
 # --- SOCIAL LINKS ---
@@ -73,11 +82,12 @@ st.write('\n')
 st.subheader("Experience & Qulifications")
 st.write(
     """
-- ✔️ 7 Years expereince extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python and Excel
-- ✔️ Good understanding of statistical principles and their respective applications
-- ✔️ Excellent team-player and displaying strong sense of initiative on tasks
-"""
+- ✔️ Over 15 years of experience in software testing and test automation, with a focus on backend/API and mobile network protocols
+- ✔️ Strong hands-on experience in Python (pytest, BDD), SQL, AWS, GraphQL, MongoDB, Gitlab, Linux
+- ✔️ Proven track record in designing, implementing, and maintaining automated test frameworks for backend APIs and mobile devices
+- ✔️ Experience in healthcare and telecom industries, collaborating with cross-functional teams and reporting bugs
+- ✔️ ISTQB Foundation certified, with continuous upskilling in Python, Django, and modern testing tools
+    """
 )
 
 
@@ -86,11 +96,13 @@ st.write('\n')
 st.subheader("Hard Skills")
 st.write(
     """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-- 📊 Data Visulization: PowerBi, MS Excel, Plotly
-- 📚 Modeling: Logistic regression, linear regression, decition trees
-- 🗄️ Databases: Postgres, MongoDB, MySQL
-"""
+- 🧑‍💻 Programming & Automation: Python (pytest, BDD, Selenium), SQL, Django, Bash
+- ☁️ Cloud & Tools: AWS, Gitlab, Linux, Jira, Bitbucket, Allure, Postman
+- 🗄️ Databases: MongoDB, PostgreSQL, MySQL
+- 🔗 APIs: REST, GraphQL, CLI testing
+- 📱 Mobile & Protocols: Android Comms Test Suite, NAS, IMS (VoLTE, VoWiFi, RCS), 5G NR, 4G LTE, WCDMA, GSM
+- 🏥 Domain: Healthcare IT, Pharma, Telecom
+    """
 )
 
 
@@ -100,44 +112,67 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+st.write("🚧", "**Test Development Engineer | Sii Poland**")
+st.write("03/2023 - Present")
 st.write(
     """
-- ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-- ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-- ► Redesigned data model through iterations that improved predictions by 12%
-"""
+- Testing an advanced AWS-based platform for a healthcare industry client (demand for medicines, clinical trial process, etc.)
+- Tool stack: AWS, SQL, GraphQL, MongoDB, Gitlab, Linux
+- Create and maintain automated backend API and CLI tests in Python using BDD (pytest, allure)
+- Report bugs and collaborate with the development team on resolving them
+    """
 )
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-st.write("01/2018 - 02/2022")
+st.write("🚧", "**Senior Protocol Test Engineer | Samsung Electronics Polska**")
+st.write("03/2017 - 03/2023")
 st.write(
     """
-- ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-- ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-- ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
-"""
+- Developed and maintained automated test cases for mobile network protocol tests on Android devices (Python, Git, Jira, Linux, Android Comms Test Suite)
+- Backend development of CRUD web application for test management (Python, Django, Jira, Git, Bitbucket)
+- Manual testing of Android mobile phones, tablets, and wearables
+- NAS protocol testing in mobile and stationary NR/LTE/WCDMA/GSM environments
+- Onsite IMS (VoLTE, VoWiFi, RCS) testing in 30+ European countries
+- Frequent business travel (50% worktime)
+    """
 )
 
 # --- JOB 3
 st.write('\n')
-st.write("🚧", "**Data Analyst | Chegg**")
-st.write("04/2015 - 01/2018")
+st.write("🚧", "**Protocol Test Engineer | Samsung Electronics Polska**")
+st.write("05/2010 - 03/2017")
 st.write(
     """
-- ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-- ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-- ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
-"""
+- Conducted mobile software tests according to procedures
+- Field, interoperability, and network operator acceptance tests
+- Reported test results and registered problems
+- Improved test procedures and processes
+- Frequent business trips (London, Frankfurt, Paris, Moscow, Milan, Stockholm)
+    """
 )
 
-
-# --- Projects & Accomplishments ---
+# --- JOB 4
 st.write('\n')
-st.subheader("Projects & Accomplishments")
-st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
+st.write("🚧", "**Test Team Lead | Samsung Electronics Polska**")
+st.write("12/2007 - 05/2010")
+st.write(
+    """
+- Managed a team of 15-20 testers
+- Created test plans and reports
+- Presented and shared results with management
+- Cooperated with developers for quality assurance and bug fixing
+    """
+)
+
+# --- JOB 5
+st.write('\n')
+st.write("🚧", "**Software Tester | Samsung Electronics Polska**")
+st.write("08/2007 - 12/2007")
+st.write(
+    """
+- Created and executed manual test cases (Test Forte, Anytest, MS Excel)
+- Performed feature testing: SMS, MMS, Voice/Video call, Bluetooth, Wi-Fi
+- Tested mobile phones based on Symbian, Windows Mobile, SHP
+    """
+)
