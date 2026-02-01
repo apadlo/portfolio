@@ -8,7 +8,7 @@ from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+profile_pic = current_dir / "assets" / "profile-pic_1.png"
 
 
 # --- GENERAL SETTINGS ---
@@ -16,8 +16,8 @@ PAGE_TITLE = "Digital CV | Andrzej Padło"
 PAGE_ICON = ":wave:"
 NAME = "Andrzej Padło"
 DESCRIPTION = """
-Test Development Engineer and Senior Protocol Test Engineer with extensive experience in backend/API and mobile 
-network protocol testing, automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
+Test Development Engineer with extensive experience in backend/API and mobile 
+network protocol manual testing, test automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
 modern test frameworks. Experienced in healthcare and telecom domains, with a strong record of collaboration and 
 continuous learning.
 """
@@ -29,10 +29,9 @@ SOCIAL_MEDIA = {
     "Twitter": "https://twitter.com",
 }
 PROJECTS = {
-    "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": "https://github.com/apadlo/PythonBackendTesting",
+    "🏆 Python Selenium Framework - Web UI automation framework using Selenium, pytest, and Page Object Model": "https://github.com/apadlo/PythonSeleniumFramework",
+    "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and Page Object Model": "https://github.com/apadlo/PythonAppiumFramework",
 }
 
 
@@ -91,9 +90,10 @@ st.write(
 )
 
 
+
 # --- SKILLS ---
 st.write('\n')
-st.subheader("Hard Skills")
+st.subheader("Skills")
 st.write(
     """
 - 🧑‍💻 Programming & Automation: Python (pytest, BDD, Selenium), SQL, Django, Bash
@@ -104,6 +104,13 @@ st.write(
 - 🏥 Domain: Healthcare IT, Pharma, Telecom
     """
 )
+
+# --- Projects & Accomplishments ---
+st.write('\n')
+st.subheader("Sample Projects & Accomplishments")
+st.write("---")
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
 
 
 # --- WORK HISTORY ---
