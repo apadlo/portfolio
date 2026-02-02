@@ -117,10 +117,14 @@ st.write("🚧", "**Test Development Engineer | Sii Poland**")
 st.write("03/2023 - Present")
 st.write(
     """
-- Testing an advanced AWS-based platform for a healthcare industry client (demand for medicines, clinical trial process, etc.)
-- Tool stack: AWS, SQL, GraphQL, MongoDB, Gitlab, Linux
-- Create and maintain automated backend API and CLI tests in Python using BDD (pytest, allure)
-- Report bugs and collaborate with the development team on resolving them
+- Built and maintained automated test frameworks using Python and pytest, applying OOP principles for scalability and reuse.
+- Delivered comprehensive REST and GraphQL API testing using requests, Postman, and cURL.
+- Implemented Allure Reports to provide clear, actionable test results and improve defect visibility.
+- Created data-driven tests with Pandas to validate complex datasets and test outcomes.
+- Automated UI regression tests using Playwright / Selenium / Splinter, following the Page Object Model (POM).
+- Integrated automated tests into GitLab CI/CD pipelines, including secure secrets management.
+- Supported cloud and containerized environments using AWS (RDS, S3, EKS), Docker, and basic Kubernetes concepts.
+- Worked with PostgreSQL, GraphQL, MongoDB, Snowflake, and Linux environments, using Bash scripting to automate test and CI/CD tasks
     """
 )
 
