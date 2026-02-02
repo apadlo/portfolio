@@ -8,7 +8,7 @@ from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic_1.png"
+profile_pic = current_dir / "assets" / "profile-pic.png"
 
 
 # --- GENERAL SETTINGS ---
@@ -17,20 +17,17 @@ PAGE_ICON = ":wave:"
 NAME = "Andrzej Padło"
 DESCRIPTION = """
 Test Development Engineer with extensive experience in backend/API and mobile 
-network protocol manual testing, test automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
+network protocol testing, test automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
 modern test frameworks. Experienced in healthcare and telecom domains, with a strong record of collaboration and 
 continuous learning.
 """
-# EMAIL = "johndoe@email.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/",
-    "LinkedIn": "https://linkedin.com",
-    "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
+    "LinkedIn": "https://www.linkedin.com/in/andrzejpadlo/",
 }
 PROJECTS = {
-    "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": "https://github.com/apadlo/PythonBackendTesting",
+    "🏆 Playwright Python Framework - Web UI automation using Playwright for Python (pytest, POM, async support)": "https://github.com/apadlo/playwright-python",
     "🏆 Python Selenium Framework - Web UI automation framework using Selenium, pytest, and Page Object Model": "https://github.com/apadlo/PythonSeleniumFramework",
+    "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": "https://github.com/apadlo/PythonBackendTesting",
     "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and Page Object Model": "https://github.com/apadlo/PythonAppiumFramework",
 }
 
@@ -38,7 +35,7 @@ PROJECTS = {
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
@@ -67,13 +64,12 @@ with col2:
             '<meta http-equiv="refresh" content="0; url=mailto:apadlo@hotmail.com">',
             unsafe_allow_html=True
         )
-
-
-# --- SOCIAL LINKS ---
-st.write('\n')
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+    linkedin_button = st.button("🔗 LinkedIn Profile")
+    if linkedin_button:
+        st.markdown(
+            f'<meta http-equiv="refresh" content="0; url={SOCIAL_MEDIA["LinkedIn"]}">',
+            unsafe_allow_html=True
+        )
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---
@@ -96,7 +92,7 @@ st.write('\n')
 st.subheader("Skills")
 st.write(
     """
-- 🧑‍💻 Programming & Automation: Python (pytest, BDD, Selenium), SQL, Django, Bash
+- 🧑‍💻 Programming & Automation: Python (pytest, BDD, Selenium, Playwright), SQL, Django, Bash
 - ☁️ Cloud & Tools: AWS, Gitlab, Linux, Jira, Bitbucket, Allure, Postman
 - 🗄️ Databases: MongoDB, PostgreSQL, MySQL
 - 🔗 APIs: REST, GraphQL, CLI testing
@@ -155,7 +151,7 @@ st.write(
 - Field, interoperability, and network operator acceptance tests
 - Reported test results and registered problems
 - Improved test procedures and processes
-- Frequent business trips (London, Frankfurt, Paris, Moscow, Milan, Stockholm)
+- Frequent business travel (50% worktime)
     """
 )
 
