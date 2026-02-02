@@ -21,9 +21,8 @@ network protocol testing, test automation, and web application development. Skil
 modern test frameworks. Experienced in healthcare and telecom domains, with a strong record of collaboration and 
 continuous learning.
 """
-# EMAIL = "johndoe@email.com"
 SOCIAL_MEDIA = {
-    "LinkedIn": "https://linkedin.com",
+    "LinkedIn": "https://www.linkedin.com/in/andrzejpadlo/",
 }
 PROJECTS = {
     "🏆 Playwright Python Framework - Web UI automation using Playwright for Python (pytest, POM, async support)": "https://github.com/apadlo/playwright-python",
@@ -36,7 +35,7 @@ PROJECTS = {
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
@@ -68,7 +67,7 @@ with col2:
     linkedin_button = st.button("🔗 LinkedIn Profile")
     if linkedin_button:
         st.markdown(
-            '<meta http-equiv="refresh" content="0; url=https://www.linkedin.com/in/andrzejpadlo/">',
+            f'<meta http-equiv="refresh" content="0; url={SOCIAL_MEDIA["LinkedIn"]}">',
             unsafe_allow_html=True
         )
 
