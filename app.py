@@ -64,12 +64,10 @@ with col2:
             '<meta http-equiv="refresh" content="0; url=mailto:apadlo@hotmail.com">',
             unsafe_allow_html=True
         )
-    linkedin_button = st.button("🔗 LinkedIn Profile")
-    if linkedin_button:
-        st.markdown(
-            f'<meta http-equiv="refresh" content="0; url={SOCIAL_MEDIA["LinkedIn"]}">',
-            unsafe_allow_html=True
-        )
+    st.link_button(
+        "🔗 Visit my LinkedIn",
+        SOCIAL_MEDIA["LinkedIn"]
+    )
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---
