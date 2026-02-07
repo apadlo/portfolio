@@ -31,6 +31,7 @@ PROJECTS = {
     "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and Page Object Model": "https://github.com/apadlo/PythonAppiumFramework",
     "🏆 Pytest support for Django project backend tests - Simple ToDoWoo web app with user login and database-backed to-do lists": "https://github.com/apadlo/todos?tab=readme-ov-file#test-configuration",
     "🏆 ChatGPT like clone": "https://bielik.streamlit.app/",
+    "🏆 AI powered web scrapper": "https://smart-scrapper.streamlit.app/",
 
 }
 
