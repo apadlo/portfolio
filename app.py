@@ -30,8 +30,8 @@ PROJECTS = {
     "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": "https://github.com/apadlo/PythonBackendTesting",
     "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and Page Object Model": "https://github.com/apadlo/PythonAppiumFramework",
     "🏆 Pytest support for Django project backend tests - Simple ToDoWoo web app with user login and database-backed to-do lists": "https://github.com/apadlo/todos?tab=readme-ov-file#test-configuration",
-    "🏆 ChatGPT like clone": "https://bielik.streamlit.app/",
-    "🏆 AI powered web scrapper": "https://smart-scrapper.streamlit.app/",
+    "🏆 ChatGPT-like Clone – Interactive web app simulating conversational AI, built with Streamlit and Python": "https://bielik.streamlit.app/",
+    "🏆 AI-Powered Web Scraper – Streamlit app for automated web data extraction using Python and AI agent": "https://smart-scrapper.streamlit.app/",
 
 }
 
