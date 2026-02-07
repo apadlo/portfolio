@@ -4,6 +4,8 @@
 
 This repository implements automated checks to protect the main branch and ensure code quality.
 
+> **📋 Setup Instructions**: See [SETUP_BRANCH_PROTECTION.md](SETUP_BRANCH_PROTECTION.md) for step-by-step instructions on configuring branch protection rules in GitHub.
+
 ## Required Checks
 
 All pull requests to the `main` branch must pass the following automated checks:
