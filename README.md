@@ -80,6 +80,10 @@ This repository implements automated CI/CD checks to protect the main branch:
 
 See [Branch Protection Guidelines](.github/BRANCH_PROTECTION.md) for more details.
 
+## 🤝 Contributing
+
+Contributions are welcome! Please see our [Contributing Guidelines](.github/CONTRIBUTING.md) for details on how to get started.
+
 ## 📫 Contact
 
 **Andrzej Padło**
