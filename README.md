@@ -1,5 +1,7 @@
 # Digital CV Portfolio
 
+[![CI - Main Branch Protection](https://github.com/apadlo/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/apadlo/portfolio/actions/workflows/ci.yml)
+
 A modern, interactive digital CV/portfolio built with Streamlit, showcasing professional experience, skills, and projects.
 
 ## 🌟 Features
@@ -67,6 +69,20 @@ portfolio/
 ## 🎨 Customization
 
 The application uses a custom theme defined in `.streamlit/config.toml`. You can modify the colors and styling to match your preferences.
+
+## 🛡️ Branch Protection
+
+This repository implements automated CI/CD checks to protect the main branch:
+- Code quality validation (Black, Flake8, Pylint)
+- Python syntax checking
+- Security vulnerability scanning
+- Application build testing
+
+See [Branch Protection Guidelines](.github/BRANCH_PROTECTION.md) for more details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please see our [Contributing Guidelines](.github/CONTRIBUTING.md) for details on how to get started.
 
 ## 📫 Contact
 
