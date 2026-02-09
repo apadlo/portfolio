@@ -24,27 +24,15 @@ SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/andrzejpadlo/",
 }
 PROJECTS = {
-    "🏆 Playwright Python Framework - Web UI automation using Playwright for Python (pytest, POM, async support)": (
-        "https://github.com/apadlo/playwright-python"
-    ),
-    "🏆 Python Selenium Framework - Web UI automation framework using Selenium, pytest, and Page Object Model": (
-        "https://github.com/apadlo/PythonSeleniumFramework"
-    ),
-    "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": (
-        "https://github.com/apadlo/PythonBackendTesting"
-    ),
-    "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and POM": (
-        "https://github.com/apadlo/PythonAppiumFramework"
-    ),
-    "🏆 Pytest support for Django project backend tests - Simple ToDoWoo web app with user login and to-do lists": (
-        "https://github.com/apadlo/todos?tab=readme-ov-file#test-configuration"
-    ),
-    "🏆 ChatGPT-like Clone – Interactive web app simulating conversational AI, built with Streamlit and Python": (
-        "https://bielik.streamlit.app/"
-    ),
-    "🏆 AI-Powered Web Scraper – Streamlit app for automated web data extraction using Python and AI agent": (
-        "https://smart-scrapper.streamlit.app/"
-    ),
+    "🏆 Playwright Python Framework - Web UI automation using Playwright for Python (pytest, POM, async support)": "https://github.com/apadlo/playwright-python",
+    "🏆 Python Selenium Framework - Web UI automation framework using Selenium, pytest, and Page Object Model": "https://github.com/apadlo/PythonSeleniumFramework",
+    "🏆 Python Backend Testing Framework - Automated API and backend testing framework (pytest, BDD, Allure)": "https://github.com/apadlo/PythonBackendTesting",
+    "🏆 Python Appium Framework - Mobile app automation framework for Android/iOS using Appium, pytest, and Page Object Model": "https://github.com/apadlo/PythonAppiumFramework",
+    "🏆 Pytest support for Django project backend tests - Simple ToDoWoo web app with user login and database-backed to-do lists": "https://github.com/apadlo/todos?tab=readme-ov-file#test-configuration",
+    "🏆 ChatGPT-like Clone – Interactive web app simulating conversational AI, built with Streamlit and Python": "https://bielik.streamlit.app/",
+    "🏆 AI-Powered Web Scraper – Streamlit app for automated web data extraction using Python and AI agent": "https://smart-scrapper.streamlit.app/",
+    "🏆 Python AI Agent – Generates notes based on received prompt, built with FastAPI, LangChain, OpenAI": "https://github.com/apadlo/python-ai-agent",
+
 }
 
 
