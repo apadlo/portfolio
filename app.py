@@ -32,6 +32,7 @@ PROJECTS = {
     "🏆 Pytest support for Django project backend tests - Simple ToDoWoo web app with user login and database-backed to-do lists": "https://github.com/apadlo/todos?tab=readme-ov-file#test-configuration",
     "🏆 ChatGPT-like Clone – Interactive web app simulating conversational AI, built with Streamlit and Python": "https://bielik.streamlit.app/",
     "🏆 AI-Powered Web Scraper – Streamlit app for automated web data extraction using Python and AI agent": "https://smart-scrapper.streamlit.app/",
+    "🏆 Python AI Agent – Generates notes based on received prompt, built with FastAPI, LangChain, OpenAI": "https://github.com/apadlo/python-ai-agent",
 
 }
 
