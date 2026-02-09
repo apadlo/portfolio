@@ -1,0 +1,14 @@
+# Code Owners
+# These owners will be automatically requested for review when someone opens a pull request.
+# More information: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+* @apadlo
+
+# Specific ownership for critical files
+/.github/ @apadlo
+/requirements.txt @apadlo
+/app.py @apadlo
+
+# Configuration files
+/.streamlit/ @apadlo
