@@ -3,24 +3,24 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
-
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
-
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Andrzej Padło"
 PAGE_ICON = ":wave:"
 NAME = "Andrzej Padło"
-DESCRIPTION = """
+DESCRIPTION = (
+    """
 Test Development Engineer with extensive experience in backend/API and mobile 
 network protocol testing, test automation, and web application development. Skilled in Python, AWS, SQL, GraphQL, and 
 modern test frameworks. Experienced in healthcare and telecom domains, with a strong record of collaboration and 
 continuous learning.
 """
+)
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/andrzejpadlo/",
 }
@@ -33,20 +33,16 @@ PROJECTS = {
     "🏆 ChatGPT-like Clone – Interactive web app simulating conversational AI, built with Streamlit and Python": "https://bielik.streamlit.app/",
     "🏆 AI-Powered Web Scraper – Streamlit app for automated web data extraction using Python and AI agent": "https://smart-scrapper.streamlit.app/",
     "🏆 Python AI Agent – Generates notes based on received prompt, built with FastAPI, LangChain, OpenAI": "https://github.com/apadlo/python-ai-agent",
-
 }
-
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
-
 # --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
-
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
@@ -74,7 +70,6 @@ with col2:
         SOCIAL_MEDIA["LinkedIn"]
     )
 
-
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
 st.subheader("Experience & Qulifications")
@@ -87,8 +82,6 @@ st.write(
 - ✔️ ISTQB Foundation certified, with continuous upskilling in Python, Django, and modern testing tools
     """
 )
-
-
 
 # --- SKILLS ---
 st.write('\n')
@@ -110,7 +103,6 @@ st.subheader("Sample Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
-
 
 # --- WORK HISTORY ---
 st.write('\n')
